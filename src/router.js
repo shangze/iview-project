@@ -1,10 +1,21 @@
+import index from "./views/index.vue"
+import grid from "./views/grid.vue"
+import test from "./views/test.vue"
+
+const Foo = { template: '<div>foo</div>' }
+const Bar = { template: '<div>bar</div>' }
+
 const routers = [
+	{ path: '/', redirect: '/index' },
     {
-        path: '/',
+        path: '/index',
         meta: {
-            title: ''
+            title: '首页'
         },
-        component: (resolve) => require(['./views/index.vue'], resolve)
-    }
+        component: test
+    },
+    { path: '/grid', component: grid },
+    { path: '/foo', component: Foo },
+  	{ path: '/bar', component: Bar }
 ];
 export default routers;

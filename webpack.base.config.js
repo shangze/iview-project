@@ -61,6 +61,9 @@ module.exports = {
             }
         ]
     },
+    externals: {
+        jquery: "jQuery"
+    },
     resolve: {
         extensions: ['.js', '.vue'],
         alias: {
