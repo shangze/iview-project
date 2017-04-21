@@ -61,13 +61,11 @@ module.exports = {
             }
         ]
     },
-    externals: {
-        jquery: "jQuery"
-    },
     resolve: {
         extensions: ['.js', '.vue'],
         alias: {
-            'vue': 'vue/dist/vue.esm.js'
+            'vue': 'vue/dist/vue.esm.js',
+            jquery: "jQuery"
         }
     }
 };

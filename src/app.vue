@@ -67,10 +67,18 @@
                         <span class="layout-text" >选项 2</span>
                     </Menu-item>
                     </router-link>
+                    <router-link to="/ceshi">
                     <Menu-item name="3">
                         <Icon type="ios-analytics" :size="iconSize"></Icon>
                         <span class="layout-text">选项 3</span>
                     </Menu-item>
+                    </router-link>
+                    <router-link to="/echarts">
+                    <Menu-item name="图表">
+                        <Icon type="ios-analytics" :size="iconSize"></Icon>
+                        <span class="layout-text">图表</span>
+                    </Menu-item>
+                    </router-link>
                 </Menu>
             </i-col>
             <i-col :span="spanRight">
@@ -88,8 +96,8 @@
                 </div>
                 <div class="layout-content">
                     <div class="layout-content-main">
-                    <router-link to="/foo">Go to Foo</router-link>
-                    <router-link to="/bar">Go to Bar</router-link>
+                    <!--<router-link to="/foo">Go to Foo</router-link>-->
+                    <!--<router-link to="/bar">Go to Bar</router-link>-->
                         <router-view></router-view>
                     </div>
                 </div>
